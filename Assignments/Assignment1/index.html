@@ -4,102 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login/Signup</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+
   </head>
-  <body>
+  <body >
     <div class="left-section">
-      <img id="imageSwitcher" src="img/img1.jpg" alt="" />
+      <img id="imageSwitcher" src="img/img1.jpg" alt="Background Image" />
     </div>
     <div class="right-section">
-      <!-- <div><button>Sign up</button><button>log in</button></div> -->
+      <div class="tab-switch">
+        <button id="loginTab" class="active">Log In</button>
+        <button id="signupTab">Sign Up</button>
+      </div>
       <div class="login-page">
         <p id="login-text">Log In</p>
         <div class="button-container">
-          <div class="button-container">
-            <a href="#" class="button-icon">
-              <ion-icon id="facebook" name="logo-facebook"></ion-icon>
-              Sign up with Facebook
-            </a>
-            <a href="#" class="button-icon">
-              <ion-icon id="google" name="logo-google"></ion-icon>
-              Sign up with Google
-            </a>
-          </div>
+          <a href="#" class="button-icon">
+            <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#" class="button-icon">
+            <ion-icon id="twitter" name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#" class="button-icon">
+            <ion-icon id="github" name="logo-github"></ion-icon>
+          </a>
+          <a href="#" class="button-icon">
+            <ion-icon id="google" name="logo-google"></ion-icon>
+          </a>
         </div>
         <div class="division">
           <hr />
           <span>Or</span>
           <hr />
         </div>
-
-        <div class="signin-form">
-          <form action="">
-            <div class="input-wrapper">
-              <label class="name" for="email">Email</label>
-              <input type="email" id="email">
-            </div>
-            <div class="input-wrapper">
-              <label class="name" for="password">Password</label>
-              <input type="password" id="password">
-            </div>
-                    
-            <div class="form-bottom">
-              <div class="rememberme">
-                <input name="checkbox" type="checkbox" />
-                <label  for="checkbox">Remember Me</label>
-              </div>
-              <a href="">Forgot Password?</a>
-            </div>
-            <button type="submit">Log In</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="signup-page">
-        <p>Log In</p>
-        <div>
-          <button>
-            <ion-icon name="logo-facebook"
-              ><span>Sign up with Facebook</span></ion-icon
-            ></button
-          ><button>
-            <ion-icon name="logo-google"
-              ><span>Sign up with Google</span></ion-icon
-            >
-          </button>
-        </div>
-        <div>
-          <hr />
-          Or
-          <hr />
-        </div>
-        <div>
-          <form action="">
-            <label for="email">Email </label>
-            <input name="email" type="email" />
+        <form action="">
+          <div class="input-wrapper">
+            <label for="email">Email</label>
+            <input placeholder="Email address" type="email" id="email" required />
+          </div>
+          <div class="input-wrapper">
             <label for="password">Password</label>
-            <input name="password" type="password" />
-            <input name="checkbox" type="checkbox" />
-            <label for="checkbox"></label>
-            <button type="submit">Log In</button>
-          </form>
+            <input placeholder="Password" type="password" id="password" required />
+          </div>
+          <div class="form-bottom">
+            <div class="rememberme">
+              <input type="checkbox" id="rememberMe" />
+              <label for="rememberMe">Remember Me</label>
+            </div>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit">Log In</button>
+        </form>
+      </div>
+      <div class="signup-page">
+        <p id="login-text">Sign Up</p>
+        <div class="button-container">
+          <a href="#" class="button-icon">
+            <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#" class="button-icon">
+            <ion-icon id="twitter" name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#" class="button-icon">
+            <ion-icon id="github" name="logo-github"></ion-icon>
+          </a>
+          <a href="#" class="button-icon">
+            <ion-icon id="google" name="logo-google"></ion-icon>
+          </a>
         </div>
+        <div class="division">
+          <hr />
+          <span>Or</span>
+          <hr />
+        </div>
+        <form action="">
+          <div class="names">
+            <div class="input-wrapper">
+              <label for="fName">First Name</label>
+              <input placeholder="Alvin" type="text" id="fName" required />
+            </div>
+            <div class="input-wrapper">
+              <label for="lName">Last Name</label>
+              <input placeholder="Yeboah" type="text" id="lName" required />
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="email1">Email</label>
+            <input placeholder="xxxx@xxxx.com" type="email" id="email1" required />
+          </div>
+          <div class="input-wrapper">
+            <label for="password1">Password</label>
+            <input placeholder="*******" type="password" id="password1" required />
+          </div>
+          <div class="input-wrapper">
+            <label for="confirmPassword">Confirm Password</label>
+            <input placeholder="*******" type="password" id="confirmPassword" required />
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
       </div>
     </div>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

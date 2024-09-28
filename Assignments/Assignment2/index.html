@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    3
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Bytes - Recipe Sharing</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="left-section">
+        <nav>
+          <img id="logo" src="../img/favicon.ico" alt="Tasty Bytes Logo" />
+          <ul>
+            <a href="#profile">
+              <li>
+                <ion-icon name="person"></ion-icon><span class="side-bar-text">Profile</span>
+              </li>
+            </a>
+            <a href="#settings">
+              <li id="settings">
+                <ion-icon name="settings"></ion-icon><span class="side-bar-text">Settings</span>
+              </li>
+            </a>
+            <a href="#logout">
+              <li>
+                <ion-icon name="exit"></ion-icon><span class="side-bar-text"> Logout</span>
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <div class="banner">
+        <h1>Tasty Bytes</h1>
+        <p>Discover, Share, and Savor Delicious Recipes</p>
+        <p>Ready to explore our culinary world?</p>
+        <button>View Recipes</button>
+      </div>
+    </div>
+
+    <main>
+      <section id="featured-recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-grid">
+          <div class="recipe-card">
+            <img src="../img/recipe1.jpg" alt="Pasta Primavera">
+            <h3>Pasta Primavera</h3>
+            <p>A delightful spring pasta dish loaded with fresh vegetables.</p>
+          </div>
+          <div class="recipe-card">
+            <img src="../img/recipe1.jpg" alt="Pasta Primavera">
+            <h3>Pasta Primavera</h3>
+            <p>A delightful spring pasta dish loaded with fresh vegetables.</p>
+          </div>
+          <div class="recipe-card">
+            <img src="../img/recipe1.jpg" alt="Pasta Primavera">
+            <h3>Pasta Primavera</h3>
+            <p>A delightful spring pasta dish loaded with fresh vegetables.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <ion-icon name="search"></ion-icon>
+            <h3>Discover</h3>
+            <p>Browse through our vast collection of recipes.</p>
+          </div>
+          <div class="step">
+            <ion-icon name="create"></ion-icon>
+            <h3>Create</h3>
+            <p>Share your own recipes with our community.</p>
+          </div>
+          <div class="step">
+            <ion-icon name="heart"></ion-icon>
+            <h3>Save</h3>
+            <p>Bookmark your favorite recipes for later.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="join-community">
+        <h2>Join Our Culinary Community</h2>
+        <p>Sign up now to start sharing your recipes and connecting with food lovers!</p>
+        <button style="margin-top: 24px; background-color: white; color: black;">Sign Up Free</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Tasty Bytes</h3>
+          <p>We're passionate about bringing food lovers together to share and discover amazing recipes.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Tasty Bytes. All rights reserved. Alvin Yeboah</p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>

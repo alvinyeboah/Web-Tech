@@ -13,7 +13,8 @@ body {
   background-color: #f0f2f5; */
 }
 
-.left-section, .right-section {
+.left-section,
+.right-section {
   flex: 1;
 }
 
@@ -34,7 +35,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -59,7 +60,8 @@ background-image: url("../img/bg.jpg");
   color: white;
 }
 
-.login-page, .signup-page {
+.login-page,
+.signup-page {
   background-color: #6c9280;
   border-radius: 12px;
   padding: 2rem;
@@ -200,8 +202,8 @@ button[type="submit"]:hover {
 }
 /* easy responsiveness */
 @media screen and (max-width: 430px) {
-    .left-section {
-        /* display: none; */
-        position: absolute;
-    }
+  .left-section {
+    /* display: none; */
+    position: absolute;
+  }
 }

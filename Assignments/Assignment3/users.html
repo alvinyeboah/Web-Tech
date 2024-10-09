@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="users.css">
+  <title>User Management</title>
+</head>
+<body>
+    <nav id="sidebar" class="sidebar bg-white gap-30">
+        <div class="flex items-center justify-center gap-10 ml-auto mr-auto">
+          <img id="dashboard-logo" src="../img/favicon.ico" alt="" />
+          <div id="dashboard-logo-text">
+            <span
+              class="font-weight-800 font-lg"
+              style="text-transform: uppercase; font-size: large"
+              >TastyBytes</span
+            >
+            <span> Dashboard</span>
+          </div>
+        </div>
+        <hr />
+        <ul>
+          <li>
+            <a class="gap-10 " href="index.html"
+              ><ion-icon name="home"></ion-icon><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a class="gap-10 active" href="users.html
+            "
+              ><ion-icon name="people"></ion-icon><span>User Manager</span></a
+            >
+          </li>
+          <li>
+            <a class="gap-10" href="recipe-manager.html"
+              ><ion-icon name="file-tray"></ion-icon
+              ><span>Recipe Manager</span></a
+            >
+          </li>
+          <li>
+            <a class="gap-10" href="#"
+              ><ion-icon name="person"></ion-icon><span>Profile</span></a
+            >
+          </li>
+          <li>
+            <a class="gap-10" href="#"
+              ><ion-icon name="exit"></ion-icon><span>Logout</span></a
+            >
+          </li>
+        </ul>
+        <button
+          id="sidebar-toggle"
+          class="sidebar-toggle flex justify-center items-center"
+        >
+          <span id="collapse-sidebar-text">Collapse Sidebar</span>
+          <ion-icon id="caret-back" name="caret-back"></ion-icon>
+        </button>
+      </nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h2>User Management</h2>
+
+    <!-- User Table -->
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>XXX XXX</td>
+          <td>xxx.xxx@xxx.com</td>
+          <td>
+            <button class="view-btn">View</button>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>XXX XXX</td>
+          <td>xxx.xxx@xxx.com</td>
+          <td>
+            <button class="view-btn">View</button>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="user-form" id="edit-form">
+      <h3>Edit User</h3>
+      <form>
+        <label for="user-name">Name:</label>
+        <input type="text" id="user-name" placeholder="Enter name">
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" placeholder="Enter email">
+        <button type="submit">Save</button>
+      </form>
+    </div>
+    
+  </div>
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+<script src="script.js"></script>
+
+</body>
+</html>

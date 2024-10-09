@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard / Analytics Section</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body>
+    <nav id="sidebar" class="sidebar bg-white gap-30">
+      <div class="flex items-center justify-center gap-10 ml-auto mr-auto">
+        <img id="dashboard-logo" src="../img/favicon.ico" alt="" />
+        <div id="dashboard-logo-text">
+          <span
+            class="font-weight-800 font-lg"
+            style="text-transform: uppercase; font-size: large"
+            >TastyBytes</span
+          >
+          <span> Dashboard</span>
+        </div>
+      </div>
+      <hr />
+      <ul>
+        <li>
+          <a class="gap-10 active" href="index.html"
+            ><ion-icon name="home"></ion-icon><span>Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a
+            class="gap-10"
+            href="users.html
+          "
+            ><ion-icon name="people"></ion-icon><span>User Manager</span></a
+          >
+        </li>
+        <li>
+          <a class="gap-10" href="recipe-manager.html"
+            ><ion-icon name="file-tray"></ion-icon
+            ><span>Recipe Manager</span></a
+          >
+        </li>
+        <li>
+          <a class="gap-10" href="#"
+            ><ion-icon name="person"></ion-icon><span>Profile</span></a
+          >
+        </li>
+        <li>
+          <a class="gap-10" href="#"
+            ><ion-icon name="exit"></ion-icon><span>Logout</span></a
+          >
+        </li>
+      </ul>
+      <button
+        id="sidebar-toggle"
+        class="sidebar-toggle flex justify-center items-center"
+      >
+        <span id="collapse-sidebar-text">Collapse Sidebar</span>
+        <ion-icon id="caret-back" name="caret-back"></ion-icon>
+      </button>
+    </nav>
+    <main class="main-content" >
+      <div class="info-box-container div1">
+        <div class="info-box">
+          <p class="label">Total Number of Users</p>
+          <p class="userValue">5446<span></span></p>
+        </div>
+        <ion-icon class="top-icon" name="bar-chart"></ion-icon>
+      </div>
+      <div class="info-box-container div2">
+        <div class="info-box">
+          <p class="label">Total number of recipes</p>
+          <p class="ordersValue" style="display: flex; align-items: center">
+            2345
+          </p>
+        </div>
+        <ion-icon class="top-icon2" name="stats-chart"></ion-icon>
+      </div>
+      <div class="bg-white border-md div3" id="chart3"></div>
+      <div class="bg-white border-md div4">
+        <p class="font-lg label">Your User</p>
+        <div>
+          <img src="../img/man.png" id="person-icon" alt="" />
+          <p class="font-lg">Alvin Yeboah</p>
+          <p class="muted-text font-sm">
+            <ion-icon id="pin" name="pin"></ion-icon> Accra, Ghana
+          </p>
+        </div>
+      </div>
+      <div class="bg-white border-md div7" id="chart1">
+        <p class="label">Variation of Recipes</p>
+      </div>
+      <div class="bg-white border-md div8" id="chart2">
+        <p class="label font-lg">Users Vs Recipes</p>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

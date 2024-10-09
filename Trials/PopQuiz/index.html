@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country List Assignmnet</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #e3e4e6;
+      }
+      #countryContainer {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        max-height: 700px;
+        overflow-y: auto;
+      }
+      #countryContainer h2 {
+        text-align: center;
+        margin-bottom: auto;
+        font-size: 1.5rem;
+        color: #2c3e50;
+      }
+      .country-design {
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #757575;
+        border-radius: 4px;
+        font-size: 1rem;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="countryContainer"></div>
+    <script>
+      var container = document.getElementById("countryContainer");
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "https://restcountries.com/v3.1/all");
+      xhttp.onload = function () {
+        var countries = JSON.parse(xhttp.responseText);
+        countries.forEach(function (country) {
+          var countryDiv = document.createElement("p");
+          countryDiv.classList.add("country-design");
+          countryDiv.textContent = country.name.common;
+          container.appendChild(countryDiv);
+        });
+      };
+      xhttp.send();
+    </script>
+  </body>
+</html>

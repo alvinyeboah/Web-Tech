@@ -26,11 +26,18 @@ loginTab.addEventListener("click", () => {
   signupPage.style.display = "none";
 });
 
-signupTab.addEventListener("click", () => {
-  console.log("test");
+function loginActive() {
+  loginTab.classList.add("active");
+  signupTab.classList.remove("active");
+  loginPage.style.display = "block";
+  signupPage.style.display = "none";
+}
 
+signupTab.addEventListener("click", () => {
   signupTab.classList.add("active");
   loginTab.classList.remove("active");
   signupPage.style.display = "block";
   loginPage.style.display = "none";
 });
+
+
